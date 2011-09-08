@@ -1,0 +1,335 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4B4F88041418993F008EEDA4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B4F88031418993F008EEDA4 /* Cocoa.framework */; };
+		4B4F883C141899F1008EEDA4 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 4B4F8831141899F1008EEDA4 /* Credits.rtf */; };
+		4B4F883D141899F1008EEDA4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4B4F8833141899F1008EEDA4 /* InfoPlist.strings */; };
+		4B4F883E141899F1008EEDA4 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B4F8835141899F1008EEDA4 /* MainMenu.xib */; };
+		4B4F883F141899F1008EEDA4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4F8837141899F1008EEDA4 /* main.m */; };
+		4B4F8841141899F1008EEDA4 /* NLPopoverAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4F883B141899F1008EEDA4 /* NLPopoverAppDelegate.m */; };
+		4B4F884414189BBE008EEDA4 /* NLPopoverFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4F884314189BBE008EEDA4 /* NLPopoverFrame.m */; };
+		4B4F884714189C05008EEDA4 /* NLPopoverWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4F884614189C05008EEDA4 /* NLPopoverWindow.m */; };
+		4B4F884C14189E46008EEDA4 /* NLPopover.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4F884B14189E46008EEDA4 /* NLPopover.m */; };
+		4B4F885A1418ACF6008EEDA4 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B4F88581418ACF6008EEDA4 /* Quartz.framework */; };
+		4B4F885B1418ACF6008EEDA4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B4F88591418ACF6008EEDA4 /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4B4F87FF1418993F008EEDA4 /* NLPopover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NLPopover.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B4F88031418993F008EEDA4 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		4B4F88061418993F008EEDA4 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		4B4F88071418993F008EEDA4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		4B4F88081418993F008EEDA4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4B4F8832141899F1008EEDA4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = Credits.rtf; sourceTree = "<group>"; };
+		4B4F8834141899F1008EEDA4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
+		4B4F8836141899F1008EEDA4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = MainMenu.xib; sourceTree = "<group>"; };
+		4B4F8837141899F1008EEDA4 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = TestApp/main.m; sourceTree = "<group>"; };
+		4B4F8839141899F1008EEDA4 /* NLPopover-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NLPopover-Prefix.pch"; path = "TestApp/NLPopover-Prefix.pch"; sourceTree = "<group>"; };
+		4B4F883A141899F1008EEDA4 /* NLPopoverAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NLPopoverAppDelegate.h; path = TestApp/NLPopoverAppDelegate.h; sourceTree = "<group>"; };
+		4B4F883B141899F1008EEDA4 /* NLPopoverAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NLPopoverAppDelegate.m; path = TestApp/NLPopoverAppDelegate.m; sourceTree = "<group>"; };
+		4B4F884214189BBE008EEDA4 /* NLPopoverFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NLPopoverFrame.h; sourceTree = "<group>"; };
+		4B4F884314189BBE008EEDA4 /* NLPopoverFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NLPopoverFrame.m; sourceTree = "<group>"; };
+		4B4F884514189C05008EEDA4 /* NLPopoverWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NLPopoverWindow.h; sourceTree = "<group>"; };
+		4B4F884614189C05008EEDA4 /* NLPopoverWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NLPopoverWindow.m; sourceTree = "<group>"; };
+		4B4F884814189C83008EEDA4 /* NLPopover-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "NLPopover-Info.plist"; path = "TestApp/NLPopover-Info.plist"; sourceTree = "<group>"; };
+		4B4F884A14189E46008EEDA4 /* NLPopover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NLPopover.h; sourceTree = "<group>"; };
+		4B4F884B14189E46008EEDA4 /* NLPopover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NLPopover.m; sourceTree = "<group>"; };
+		4B4F884D1418A243008EEDA4 /* NLPopoverDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NLPopoverDelegate.h; sourceTree = "<group>"; };
+		4B4F88521418A8B4008EEDA4 /* NLPopoverDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NLPopoverDefines.h; sourceTree = "<group>"; };
+		4B4F88581418ACF6008EEDA4 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+		4B4F88591418ACF6008EEDA4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B4F87FC1418993F008EEDA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B4F885A1418ACF6008EEDA4 /* Quartz.framework in Frameworks */,
+				4B4F885B1418ACF6008EEDA4 /* QuartzCore.framework in Frameworks */,
+				4B4F88041418993F008EEDA4 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4B4F87F41418993F008EEDA4 = {
+			isa = PBXGroup;
+			children = (
+				4B4F88581418ACF6008EEDA4 /* Quartz.framework */,
+				4B4F88591418ACF6008EEDA4 /* QuartzCore.framework */,
+				4B4F882F141899D0008EEDA4 /* TestApp */,
+				4B4F882E141899C0008EEDA4 /* NLPopover */,
+				4B4F88021418993F008EEDA4 /* Frameworks */,
+				4B4F88001418993F008EEDA4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4B4F88001418993F008EEDA4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B4F87FF1418993F008EEDA4 /* NLPopover.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4B4F88021418993F008EEDA4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B4F88031418993F008EEDA4 /* Cocoa.framework */,
+				4B4F88051418993F008EEDA4 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4B4F88051418993F008EEDA4 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B4F88061418993F008EEDA4 /* AppKit.framework */,
+				4B4F88071418993F008EEDA4 /* CoreData.framework */,
+				4B4F88081418993F008EEDA4 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		4B4F882E141899C0008EEDA4 /* NLPopover */ = {
+			isa = PBXGroup;
+			children = (
+				4B4F884514189C05008EEDA4 /* NLPopoverWindow.h */,
+				4B4F884614189C05008EEDA4 /* NLPopoverWindow.m */,
+				4B4F884214189BBE008EEDA4 /* NLPopoverFrame.h */,
+				4B4F884314189BBE008EEDA4 /* NLPopoverFrame.m */,
+				4B4F884A14189E46008EEDA4 /* NLPopover.h */,
+				4B4F884B14189E46008EEDA4 /* NLPopover.m */,
+				4B4F884D1418A243008EEDA4 /* NLPopoverDelegate.h */,
+				4B4F88521418A8B4008EEDA4 /* NLPopoverDefines.h */,
+			);
+			name = NLPopover;
+			sourceTree = "<group>";
+		};
+		4B4F882F141899D0008EEDA4 /* TestApp */ = {
+			isa = PBXGroup;
+			children = (
+				4B4F884814189C83008EEDA4 /* NLPopover-Info.plist */,
+				4B4F8830141899F1008EEDA4 /* en.lproj */,
+				4B4F8839141899F1008EEDA4 /* NLPopover-Prefix.pch */,
+				4B4F883A141899F1008EEDA4 /* NLPopoverAppDelegate.h */,
+				4B4F883B141899F1008EEDA4 /* NLPopoverAppDelegate.m */,
+				4B4F8837141899F1008EEDA4 /* main.m */,
+			);
+			name = TestApp;
+			sourceTree = "<group>";
+		};
+		4B4F8830141899F1008EEDA4 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				4B4F8831141899F1008EEDA4 /* Credits.rtf */,
+				4B4F8833141899F1008EEDA4 /* InfoPlist.strings */,
+				4B4F8835141899F1008EEDA4 /* MainMenu.xib */,
+			);
+			name = en.lproj;
+			path = TestApp/en.lproj;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4B4F87FE1418993F008EEDA4 /* NLPopover */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B4F881D1418993F008EEDA4 /* Build configuration list for PBXNativeTarget "NLPopover" */;
+			buildPhases = (
+				4B4F87FB1418993F008EEDA4 /* Sources */,
+				4B4F87FC1418993F008EEDA4 /* Frameworks */,
+				4B4F87FD1418993F008EEDA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NLPopover;
+			productName = NLPopover;
+			productReference = 4B4F87FF1418993F008EEDA4 /* NLPopover.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4B4F87F61418993F008EEDA4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Penguins With Mustaches";
+			};
+			buildConfigurationList = 4B4F87F91418993F008EEDA4 /* Build configuration list for PBXProject "NLPopover" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4B4F87F41418993F008EEDA4;
+			productRefGroup = 4B4F88001418993F008EEDA4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4B4F87FE1418993F008EEDA4 /* NLPopover */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4B4F87FD1418993F008EEDA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B4F883C141899F1008EEDA4 /* Credits.rtf in Resources */,
+				4B4F883D141899F1008EEDA4 /* InfoPlist.strings in Resources */,
+				4B4F883E141899F1008EEDA4 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4B4F87FB1418993F008EEDA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B4F883F141899F1008EEDA4 /* main.m in Sources */,
+				4B4F8841141899F1008EEDA4 /* NLPopoverAppDelegate.m in Sources */,
+				4B4F884414189BBE008EEDA4 /* NLPopoverFrame.m in Sources */,
+				4B4F884714189C05008EEDA4 /* NLPopoverWindow.m in Sources */,
+				4B4F884C14189E46008EEDA4 /* NLPopover.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4B4F8831141899F1008EEDA4 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B4F8832141899F1008EEDA4 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		4B4F8833141899F1008EEDA4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B4F8834141899F1008EEDA4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4B4F8835141899F1008EEDA4 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B4F8836141899F1008EEDA4 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4B4F881B1418993F008EEDA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		4B4F881C1418993F008EEDA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+		4B4F881E1418993F008EEDA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestApp/NLPopover-Prefix.pch";
+				INFOPLIST_FILE = "TestApp/NLPopover-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4B4F881F1418993F008EEDA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestApp/NLPopover-Prefix.pch";
+				INFOPLIST_FILE = "TestApp/NLPopover-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4B4F87F91418993F008EEDA4 /* Build configuration list for PBXProject "NLPopover" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B4F881B1418993F008EEDA4 /* Debug */,
+				4B4F881C1418993F008EEDA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B4F881D1418993F008EEDA4 /* Build configuration list for PBXNativeTarget "NLPopover" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B4F881E1418993F008EEDA4 /* Debug */,
+				4B4F881F1418993F008EEDA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4B4F87F61418993F008EEDA4 /* Project object */;
+}

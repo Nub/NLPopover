@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'NLPopover' target in the 'NLPopover' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
