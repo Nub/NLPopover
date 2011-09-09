@@ -26,8 +26,8 @@
         [self.popover close];
         return;
     }
-    
-    [self.popover showRelativeToRect:[sender bounds] ofView:sender preferredEdge:NSMaxYEdge];
+        
+    [self.popover showRelativeToRect:[sender frame] ofView:sender preferredEdge:NSMinYEdge];
     
 }
 

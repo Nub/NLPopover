@@ -17,6 +17,7 @@
 @synthesize appearance = _appearance;
 @synthesize color;
 @synthesize borderColor;
+@synthesize hudStroke;
 
 
 - (id)initWithFrame:(NSRect)frame
@@ -25,8 +26,9 @@
     if (self) {
         // Set some default values
         self.arrowDirection = NSMaxYEdge;
-        _appearance = NSPopoverAppearanceMinimal;
-        _borderWidth = 1.0;
+        
+        [self setAppearance:NSPopoverAppearanceMinimal];
+
     }
     return self;
 }
@@ -35,6 +37,8 @@
 {
     [color release];
     [borderColor release];
+    [hudStroke release];
+    
     [super dealloc];
 }
 
@@ -43,16 +47,45 @@
     NSBezierPath *path = [self _popoverBezierPathWithRect:[self bounds]];
     
     CGContextRef ref = [[NSGraphicsContext currentContext] graphicsPort];
-
-    CGContextTranslateCTM(ref, 0.5, 0.5);
+        
+    //Gradient and extra stroke for HUD mimic
+    if(self.appearance == NSPopoverAppearanceHUD){
+        
+        NSGradient *borderGradient =
+        [[[NSGradient alloc]
+          initWithColorsAndLocations:
+          [NSColor colorWithCalibratedWhite:0.65 alpha:0.85],0.0,
+          [NSColor colorWithCalibratedWhite:0.15 alpha:0.85],0.08, nil]
+         autorelease];
+        [borderGradient drawInBezierPath:path angle:-90];
+        
+        [path setLineWidth:_borderWidth];
+        [self.borderColor set];
+        [path stroke];
+        
+        //Stroke Inside
+        [path setLineWidth:2];
+        [self.hudStroke set];
+        CGContextSaveGState(ref);
+            [path addClip];
+            [path stroke];
+        CGContextRestoreGState(ref);
+        
+    }else if(self.appearance == NSPopoverAppearanceMinimal){
+        
+        //Fix blurred edges by offsetting by half a pixel
+        CGContextTranslateCTM(ref, 0.5, 0.5);
+        
+        [self.color set];
+        [path fill];//Default fill
     
-    //[self.color set];
-    [[NSColor colorWithCalibratedWhite:0.95 alpha:0.95] set];
-    [path fill];
-    [path setLineWidth:_borderWidth];
-    //[self.borderColor set];
-    [[NSColor colorWithCalibratedWhite:1.0 alpha:1.0] set];
-    [path stroke];
+        [path setLineWidth:_borderWidth];
+        [self.borderColor set];
+        [path stroke];
+    }
+    
+    
+
 }
 
 #pragma mark -
@@ -71,6 +104,7 @@
     
     // Bottom left corner
     [path appendBezierPathWithArcWithCenter:NSMakePoint(minX, minY) radius:radius startAngle:180.0 endAngle:270.0];
+    
     if (self.arrowDirection == NSMinYEdge) {
         CGFloat midX = NSMidX(drawingRect);
         NSPoint points[3];
@@ -81,6 +115,7 @@
     }
     // Bottom right corner
     [path appendBezierPathWithArcWithCenter:NSMakePoint(maxX, minY) radius:radius startAngle:270.0 endAngle:360.0];
+    
     if (self.arrowDirection == NSMaxXEdge) {
         CGFloat midY = NSMidY(drawingRect);
         NSPoint points[3];
@@ -91,6 +126,7 @@
     }
     // Top right corner
     [path appendBezierPathWithArcWithCenter:NSMakePoint(maxX, maxY) radius:radius startAngle:0.0 endAngle:90.0];
+    
     if (self.arrowDirection == NSMaxYEdge) {
         CGFloat midX = NSMidX(drawingRect);
         NSPoint points[3];
@@ -101,6 +137,7 @@
     }
     // Top left corner
     [path appendBezierPathWithArcWithCenter:NSMakePoint(minX, maxY) radius:radius startAngle:90.0 endAngle:180.0];
+    
     if (self.arrowDirection == NSMinXEdge) {
         CGFloat midY = NSMidY(drawingRect);
         NSPoint points[3];
@@ -125,16 +162,21 @@
     
     _appearance = newAppearance;
     
+    [color release];
+    [borderColor release];
+    [hudStroke release];
+    
     switch(_appearance){ 
         case NSPopoverAppearanceMinimal:
-            self.color = [NSColor colorWithCalibratedWhite:0.85 alpha:1.0];
+            self.color = [NSColor colorWithCalibratedWhite:0.95 alpha:0.95];
             self.borderColor = [NSColor colorWithCalibratedWhite:1.0 alpha:1.0];
             _borderWidth = 1.0;
             break;
         case NSPopoverAppearanceHUD:
-            self.color = [NSColor colorWithCalibratedWhite:0.2 alpha:1.0];
-            self.borderColor = [NSColor colorWithCalibratedWhite:1.0 alpha:1.0];
-            _borderWidth = 0.0;
+            self.color = [NSColor colorWithCalibratedWhite:0.15 alpha:0.85];
+            self.borderColor = [NSColor colorWithCalibratedWhite:0.0 alpha:0.65];
+            self.hudStroke = [NSColor colorWithCalibratedWhite:1.0 alpha:0.35];
+            _borderWidth = 2;
             break;
     }
     

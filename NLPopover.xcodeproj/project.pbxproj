@@ -63,8 +63,6 @@
 		4B4F87F41418993F008EEDA4 = {
 			isa = PBXGroup;
 			children = (
-				4B4F88581418ACF6008EEDA4 /* Quartz.framework */,
-				4B4F88591418ACF6008EEDA4 /* QuartzCore.framework */,
 				4B4F882F141899D0008EEDA4 /* TestApp */,
 				4B4F882E141899C0008EEDA4 /* NLPopover */,
 				4B4F88021418993F008EEDA4 /* Frameworks */,
@@ -83,6 +81,8 @@
 		4B4F88021418993F008EEDA4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4B4F88581418ACF6008EEDA4 /* Quartz.framework */,
+				4B4F88591418ACF6008EEDA4 /* QuartzCore.framework */,
 				4B4F88031418993F008EEDA4 /* Cocoa.framework */,
 				4B4F88051418993F008EEDA4 /* Other Frameworks */,
 			);
@@ -261,7 +261,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx10.6;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -280,7 +280,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				SDKROOT = macosx10.6;
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
@@ -290,7 +290,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestApp/NLPopover-Prefix.pch";
 				INFOPLIST_FILE = "TestApp/NLPopover-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -302,7 +302,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestApp/NLPopover-Prefix.pch";
 				INFOPLIST_FILE = "TestApp/NLPopover-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

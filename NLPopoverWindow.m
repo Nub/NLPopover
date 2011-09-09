@@ -43,6 +43,8 @@ extern OSStatus CGSNewConnection(const void **attr, CGSConnectionID *id);
         
         CGSAddWindowFilter(_myConnection, [self windowNumber], __compositingFilter, __compositingType );
         
+        [self setHasShadow:YES];
+        
     }
     return self;
 }

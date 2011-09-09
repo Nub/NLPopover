@@ -13,10 +13,10 @@
 @interface NLPopoverAppDelegate : NSObject <NSApplicationDelegate> {
     NSWindow *window;
     
-    NSPopover *popover;
+    NLPopover *popover;
 }
 
-@property (assign) IBOutlet NSPopover *popover;
+@property (assign) IBOutlet NLPopover *popover;
 @property (assign) IBOutlet NSViewController *popoverViewController;
 
 @property (assign) IBOutlet NSWindow *window;

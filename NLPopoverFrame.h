@@ -23,6 +23,7 @@
     
     NSColor *color;
     NSColor *borderColor;
+    NSColor *hudStroke;
     
     CGFloat _borderWidth;
 
@@ -31,7 +32,7 @@
 
 @property (nonatomic, retain) NSColor *color;
 @property (nonatomic, retain) NSColor *borderColor;
-
+@property (nonatomic, retain) NSColor *hudStroke;
 
 @property NSRectEdge arrowDirection;
 @property NSPopoverAppearance appearance;

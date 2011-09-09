@@ -15,11 +15,26 @@
 #import "NLPopoverDelegate.h"
 #import "NLPopoverDefines.h"
 
-@interface NLPopover : NSObject
+#import <Quartz/Quartz.h>
+
+
+@interface NLPopover : NSObject <NSAnimationDelegate>
 {
   //Internal Objects
-    BOOL _shown;
+    BOOL shown;
+    BOOL animates;
     
+    NLPopoverWindow *popoverWindow;
+    
+    NSPopoverAppearance appearance;
+    NSPopoverBehavior behavior;
+    
+    NSSize contentSize;
+    NSViewController *contentViewController;
+    
+    id <NSPopoverDelegate> delegate;
+    
+    NSRect positioningRect;
     
 }
 

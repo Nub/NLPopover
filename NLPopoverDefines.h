@@ -10,21 +10,28 @@
 #define NLPopover_Defines_h
 
 enum {
-    NSPopoverBehaviorApplicationDefined = 0,
-    NSPopoverBehaviorTransient = 1,
-    NSPopoverBehaviorSemitransient = 2
+    NLPopoverBehaviorApplicationDefined = 0,
+#define NSPopoverBehaviorApplicationDefined NLPopoverBehaviorApplicationDefined
+    NLPopoverBehaviorTransient = 1,
+#define NSPopoverBehaviorTransient NLPopoverBehaviorTransient
+    NLPopoverBehaviorSemitransient = 2
+#define NSPopoverBehaviorSemitransient NLPopoverBehaviorSemitransient
+    
 };
 typedef NSInteger NSPopoverBehavior;
 
 enum {
-    NSPopoverAppearanceMinimal = 0,
-    NSPopoverAppearanceHUD = 1
+    NLPopoverAppearanceMinimal = 0,
+#define NSPopoverAppearanceMinimal NLPopoverAppearanceMinimal
+    NLPopoverAppearanceHUD = 1
+#define NSPopoverAppearanceHUD NLPopoverAppearanceHUD
+    
 };
 typedef NSInteger NSPopoverAppearance;
 
-NSString * const NSPopoverCloseReasonKey;
-NSString * const NSPopoverCloseReasonStandard;
-NSString * const NSPopoverCloseReasonDetachToWindow;
+NSString * const NLPopoverCloseReasonKey;
+NSString * const NLPopoverCloseReasonStandard;
+NSString * const NLPopoverCloseReasonDetachToWindow;
 
 /** The arrow height **/ 
 #define NLPOPOVER_ARROW_HEIGHT 12.0
