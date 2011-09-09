@@ -1,8 +1,9 @@
 NLPopover
+=========
+_A non Lion way to present a popover_
 
-Author: Zachry Thayer
-License: Let's keep it simple and just cite your sources :)
+__Author:__ Zachry Thayer
+__License:__ Let's keep it simple and just cite your sources :)
 
-Purpose: Non Lion Popover support
 
-Features: Identical interface, use, and display as a true 10.7 Popover
+__Features:__ Identical interface, use, and display as a true 10.7 Popover
